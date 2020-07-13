@@ -6,8 +6,9 @@ const Template = styled.section`
   height: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: ${({ theme }) => theme.bgColor};
+  background-color: ${({ theme }) => theme.bgColor};
   position: relative;
+  transition: background-color 0.3s;
 `;
 
 function Layout({ children }) {

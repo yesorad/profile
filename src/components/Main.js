@@ -10,13 +10,14 @@ const MainBlock = styled.section`
 `;
 
 const ColorBlock = styled.aside`
-  background: ${({ theme }) => theme.subColor};
+  background-color: ${({ theme }) => theme.subColor};
   position: fixed;
   height: 200%;
   width: 100%;
   transform: rotate(-15deg);
   left: -83%;
   top: -50%;
+  transition: background-color 0.3s;
 `;
 const TemplateBlock = styled.article`
   width: calc(100% - 3.75rem);

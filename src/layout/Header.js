@@ -8,6 +8,7 @@ import {
 } from 'react-icons/md';
 import { AiFillGithub } from 'react-icons/ai';
 import styled from 'styled-components';
+import ThemeContainer from '../containers/ThemeContainer';
 
 const HeaderBlock = styled.header`
   position: fixed;
@@ -42,7 +43,7 @@ const NavBlock = styled.nav`
         right: 1.041rem;
         opacity: 0;
         height: 2.083rem;
-        transition: 0.5s;
+        transition: 0.3s;
       }
       a {
         width: 2.083rem;
@@ -55,7 +56,7 @@ const NavBlock = styled.nav`
         display: inline-block;
         z-index: 10;
         position: relative;
-        transition: 0.5s;
+        transition: 0.3s;
 
         &.active {
           color: ${({ theme }) => theme.menuActive};
@@ -82,6 +83,7 @@ const NavBlock = styled.nav`
 function Header() {
   return (
     <HeaderBlock>
+      <ThemeContainer />
       <NavBlock>
         <ul>
           <li>
@@ -92,7 +94,7 @@ function Header() {
           </li>
           <li>
             <span>ABOUT</span>
-            <a href="/">
+            <a href="#;">
               <MdAccountCircle />
             </a>
           </li>
@@ -110,7 +112,7 @@ function Header() {
           </li>
           <li>
             <span>GITHUB</span>
-            <a href="/">
+            <a href="//github.com/yesorad" target="blank">
               <AiFillGithub />
             </a>
           </li>
