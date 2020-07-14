@@ -9,7 +9,7 @@ const typingAni = keyframes`
 const TypingBlock = styled.aside`
   position: absolute;
   top: 70%;
-  left: 70%;
+  right: 10%;
   transition: 1s ease-in-out;
 `;
 

@@ -14,8 +14,9 @@ function home() {
         description="YesRoad Profile Site"
       />
       <Main />
+      <TypingMobile />
       <Media queries={{ mobile: { maxWidth: 640 } }}>
-        {(matches) => (matches.mobile ? <TypingMobile /> : <TypingContainer />)}
+        {(matches) => (matches.mobile ? null : <TypingContainer />)}
       </Media>
     </>
   );

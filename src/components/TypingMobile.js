@@ -51,8 +51,13 @@ const textAni02 = keyframes`
 const MobileMain = styled.aside`
   width: 100%;
   position: absolute;
-  top: 12.5rem;
-  left: 3.333rem;
+  top: 8.5rem;
+  left: 7.5rem;
+
+  @media only screen and (max-width: 640px) {
+    top: 12.5rem;
+    left: 3.333rem;
+  }
 `;
 
 const TitText = styled.h3`
