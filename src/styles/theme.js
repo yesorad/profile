@@ -17,7 +17,6 @@ export const darkTheme = {
   menuActive: '#fff',
   btnColor: '#fff',
   position: 'right',
-  moHeader: '#252525',
 };
 
 export const lightTheme = {
