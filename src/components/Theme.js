@@ -3,29 +3,45 @@ import styled from 'styled-components';
 import { RiMoonClearLine, RiSunLine } from 'react-icons/ri';
 
 const ThemeBlock = styled.aside`
-  width: 2.5rem;
-  height: 1.25rem;
-  border-radius: 4.166rem;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
   background: ${({ theme }) => theme.subColor};
   position: absolute;
   top: 2.083rem;
   right: 4.166rem;
+  left: auto;
   box-sizing: border-box;
+  transition: all 0.3s;
   cursor: pointer;
+  z-index: 10;
+
+  @media only screen and (max-width: 640px) {
+    left: 1.166rem;
+    right: auto;
+    width: 50px;
+    height: 20px;
+  }
 `;
 
 const ModeIcon = styled.div`
   width: 100%;
   height: 100%;
+  text-align: ${({ theme }) => theme.position};
 
   svg {
     color: #000;
-    width: 0.833rem;
-    height: 0.833rem;
-    padding: 0.208rem;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
     background: #fff;
     border-radius: 50%;
-    transform: ${({ theme }) => theme.position};
+
+    @media only screen and (max-width: 640px) {
+      width: 15px;
+      height: 15px;
+      padding: 2px;
+    }
   }
 `;
 

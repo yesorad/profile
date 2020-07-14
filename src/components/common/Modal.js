@@ -68,7 +68,7 @@ function Modal({ text, onToggle }) {
       <DialogBlock>
         <p>{text}</p>
         <ButtonGroup>
-          <Button onClick={() => onToggle()}>확인</Button>
+          <Button onClick={onToggle}>확인</Button>
         </ButtonGroup>
       </DialogBlock>
     </Background>

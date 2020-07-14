@@ -4,16 +4,16 @@ import home from './pages/home';
 import contact from './pages/contact';
 import portfolio from './pages/portfolio';
 import Layout from './layout/Layout';
-import Header from './layout/Header';
 import GlobalStyles from './styles/GlobalStyles';
 import ProviderContainer from './containers/ProviderContainer';
+import HeaderContainer from './containers/HeaderContainer';
 
 function App() {
   return (
     <ProviderContainer>
       <GlobalStyles />
       <Layout>
-        <Header />
+        <HeaderContainer />
         <Route path="/" component={home} exact />
         <Route path="/portfolio" component={portfolio} />
         <Route path="/contact" component={contact} />

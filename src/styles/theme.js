@@ -16,7 +16,8 @@ export const darkTheme = {
   menuColor: '#ddd',
   menuActive: '#fff',
   btnColor: '#fff',
-  position: 'translateX(105%)',
+  position: 'right',
+  moHeader: '#252525',
 };
 
 export const lightTheme = {
@@ -36,5 +37,5 @@ export const lightTheme = {
   menuColor: '#666',
   menuActive: '#fff',
   btnColor: '#fff',
-  position: 'translateX(-5%)',
+  position: 'left',
 };

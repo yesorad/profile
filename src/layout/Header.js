@@ -8,73 +8,75 @@ import {
 } from 'react-icons/md';
 import { AiFillGithub } from 'react-icons/ai';
 import styled from 'styled-components';
-import ThemeContainer from '../containers/ThemeContainer';
 
-const HeaderBlock = styled.header`
+const HeaderBlock = styled.div`
   position: fixed;
   height: 100%;
   right: 0;
   z-index: 100;
 `;
 
-const NavBlock = styled.nav`
+const HeaderPc = styled.header`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 4.166rem;
-  ul {
-    li {
-      height: 2.083rem;
-      line-height: 2.083rem;
-      text-align: right;
-      margin: 0.416rem 0;
-      white-space: nowrap;
-      position: relative;
+  display: block;
+  transition: all 0.3s;
+`;
 
-      span {
-        font-size: 0.625rem;
-        display: inline-block;
+const NavBlock = styled.ul`
+  li {
+    height: 2.083rem;
+    line-height: 2.083rem;
+    text-align: right;
+    margin: 0.416rem 0;
+    white-space: nowrap;
+    position: relative;
+
+    span {
+      font-size: 0.625rem;
+      display: inline-block;
+      color: ${({ theme }) => theme.menuActive};
+      background: ${({ theme }) => theme.subColor};
+      border-radius: 1.25rem 0 0 1.25rem;
+      padding: 0 1.041rem 0 1.25rem;
+      position: absolute;
+      top: 0.083rem;
+      right: 1.041rem;
+      opacity: 0;
+      height: 2.083rem;
+      transition: 0.3s;
+    }
+    a {
+      width: 2.083rem;
+      height: 2.083rem;
+      background: ${({ theme }) => theme.menuBg};
+      text-align: center;
+      border-radius: 50%;
+      color: ${({ theme }) => theme.menuColor};
+      font-size: 0.833rem;
+      display: inline-block;
+      z-index: 10;
+      position: relative;
+      transition: 0.3s;
+
+      &.active {
         color: ${({ theme }) => theme.menuActive};
         background: ${({ theme }) => theme.subColor};
-        border-radius: 1.25rem 0 0 1.25rem;
-        padding: 0 1.041rem 0 1.25rem;
-        position: absolute;
-        top: 0.083rem;
-        right: 1.041rem;
-        opacity: 0;
-        height: 2.083rem;
-        transition: 0.3s;
       }
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+    &:hover {
       a {
-        width: 2.083rem;
-        height: 2.083rem;
-        background: ${({ theme }) => theme.menuBg};
-        text-align: center;
-        border-radius: 50%;
-        color: ${({ theme }) => theme.menuColor};
-        font-size: 0.833rem;
-        display: inline-block;
-        z-index: 10;
-        position: relative;
-        transition: 0.3s;
-
-        &.active {
-          color: ${({ theme }) => theme.menuActive};
-          background: ${({ theme }) => theme.subColor};
-        }
-
-        svg {
-          vertical-align: middle;
-        }
+        color: ${({ theme }) => theme.menuActive};
+        background: ${({ theme }) => theme.subColor};
       }
-      &:hover {
-        a {
-          color: ${({ theme }) => theme.menuActive};
-          background: ${({ theme }) => theme.subColor};
-        }
-        span {
-          opacity: 1;
-        }
+      span {
+        opacity: 1;
       }
     }
   }
@@ -83,9 +85,8 @@ const NavBlock = styled.nav`
 function Header() {
   return (
     <HeaderBlock>
-      <ThemeContainer />
-      <NavBlock>
-        <ul>
+      <HeaderPc>
+        <NavBlock>
           <li>
             <span>HOME</span>
             <NavLink to="/" activeClassName="active" exact>
@@ -116,8 +117,8 @@ function Header() {
               <AiFillGithub />
             </a>
           </li>
-        </ul>
-      </NavBlock>
+        </NavBlock>
+      </HeaderPc>
     </HeaderBlock>
   );
 }
