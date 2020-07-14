@@ -10,7 +10,7 @@ const MoHeader = styled.header`
   width: 3.333rem;
   border-radius: 5px;
   height: 3.333rem;
-  background: ${({ theme }) => theme.moHeader};
+  background: ${({ theme }) => theme.menuBg};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,7 @@ const Navi = styled.nav`
     transition: all 0.3s;
     font-weight: bold;
     a {
-      color: #3f3f3f;
+      color: #fff;
       text-decoration: none;
       transition: all 0.5s;
       &:hover,

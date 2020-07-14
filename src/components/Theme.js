@@ -17,10 +17,11 @@ const ThemeBlock = styled.aside`
   z-index: 10;
 
   @media only screen and (max-width: 640px) {
-    left: 1.166rem;
+    left: 2.566rem;
     right: auto;
     width: 50px;
     height: 20px;
+    top: 2.5rem;
   }
 `;
 
