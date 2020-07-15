@@ -9,7 +9,7 @@ function HeaderContainer() {
     <>
       <ThemeContainer />
       <Media queries={{ tablet: { maxWidth: 960 } }}>
-        {(matches) => (matches.mobile ? <HeaderMobile /> : <Header />)}
+        {(matches) => (matches.tablet ? <HeaderMobile /> : <Header />)}
       </Media>
     </>
   );
