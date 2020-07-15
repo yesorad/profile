@@ -20,7 +20,7 @@ const ThemeBlock = styled.aside`
     left: 2.566rem;
     right: auto;
     width: 50px;
-    height: 20px;
+    height: 30px;
     top: 2.5rem;
   }
 `;
@@ -38,9 +38,9 @@ const ModeIcon = styled.div`
     background: #fff;
     border-radius: 50%;
 
-    @media only screen and (max-width: 640px) {
-      width: 15px;
-      height: 15px;
+    @media only screen and (max-width: 960px) {
+      width: 25px;
+      height: 25px;
       padding: 2px;
     }
   }
