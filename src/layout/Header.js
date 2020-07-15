@@ -37,7 +37,7 @@ const NavBlock = styled.ul`
     span {
       font-size: 0.625rem;
       display: inline-block;
-      color: ${({ theme }) => theme.menuActive};
+      color: #fff;
       background: ${({ theme }) => theme.subColor};
       border-radius: 1.25rem 0 0 1.25rem;
       padding: 0 1.041rem 0 1.25rem;
@@ -62,7 +62,7 @@ const NavBlock = styled.ul`
       transition: 0.3s;
 
       &.active {
-        color: ${({ theme }) => theme.menuActive};
+        color: #fff;
         background: ${({ theme }) => theme.subColor};
       }
 
@@ -72,7 +72,7 @@ const NavBlock = styled.ul`
     }
     &:hover {
       a {
-        color: ${({ theme }) => theme.menuActive};
+        color: #fff;
         background: ${({ theme }) => theme.subColor};
       }
       span {

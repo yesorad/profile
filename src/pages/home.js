@@ -15,7 +15,7 @@ function home() {
       />
       <Main />
       <TypingMobile />
-      <Media queries={{ mobile: { maxWidth: 640 } }}>
+      <Media queries={{ tablet: { maxWidth: 960 } }}>
         {(matches) => (matches.mobile ? null : <TypingContainer />)}
       </Media>
     </>

@@ -47,7 +47,7 @@ const Textarea = styled.textarea`
 
 const Button = styled.button`
   width: 100%;
-  color: ${({ theme }) => theme.btnColor};
+  color: #fff;
   font-size: 0.666rem;
   letter-spacing: 1px;
   height: 2.083rem;

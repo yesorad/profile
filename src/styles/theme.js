@@ -14,8 +14,6 @@ export const darkTheme = {
   typingName: '#c35c1c',
   menuBg: '#2b2a2a',
   menuColor: '#ddd',
-  menuActive: '#fff',
-  btnColor: '#fff',
   position: 'right',
 };
 
@@ -34,7 +32,5 @@ export const lightTheme = {
   typingName: '#72b626',
   menuBg: '#eee',
   menuColor: '#666',
-  menuActive: '#fff',
-  btnColor: '#fff',
   position: 'left',
 };

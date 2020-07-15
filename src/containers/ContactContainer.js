@@ -19,9 +19,9 @@ function ContactContainer() {
     message: '',
   });
 
-  const [confirm, setConfirm] = useState({
-    text: '',
-    isLoader: false,
+  const [confirm, setConfirm] = useState('');
+  const [loading, setLoading] = useState({
+    isLoading: false,
   });
 
   const onChange = (e) => {
@@ -33,7 +33,7 @@ function ContactContainer() {
   };
 
   const modalView = (msg) => {
-    setConfirm({ text: msg });
+    setConfirm(msg);
     onToggle();
   };
 
@@ -44,7 +44,7 @@ function ContactContainer() {
     formData.append('phone', forms.phone);
     formData.append('message', forms.message);
 
-    setConfirm({
+    setLoading({
       isLoader: true,
     });
 
@@ -61,12 +61,12 @@ function ContactContainer() {
     } catch (e) {
       modalView(e);
 
-      setConfirm({
+      setLoading({
         isLoader: false,
       });
     }
 
-    setConfirm({
+    setLoading({
       isLoader: false,
     });
 
@@ -106,8 +106,8 @@ function ContactContainer() {
         forms={forms}
         modal={modal}
       />
-      {modal.isModal ? <Modal onToggle={onToggle} text={confirm.text} /> : null}
-      {confirm.isLoader ? <Loading /> : null}
+      {modal.isModal ? <Modal onToggle={onToggle} text={confirm} /> : null}
+      {loading.isLoader ? <Loading /> : null}
     </>
   );
 }

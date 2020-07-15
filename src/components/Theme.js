@@ -16,7 +16,7 @@ const ThemeBlock = styled.aside`
   cursor: pointer;
   z-index: 10;
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 960px) {
     left: 2.566rem;
     right: auto;
     width: 50px;

@@ -57,7 +57,7 @@ const Button = styled.button`
   background: ${({ theme }) => theme.subColor};
   border: none;
   border-radius: 4px;
-  color: ${({ theme }) => theme.primaryColor};
+  color: #fff;
   font-size: 0.75rem;
   cursor: pointer;
 `;

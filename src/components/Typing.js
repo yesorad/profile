@@ -9,7 +9,7 @@ const typingAni = keyframes`
 const TypingBlock = styled.aside`
   position: absolute;
   top: 70%;
-  right: 10%;
+  left: 65%;
   transition: 1s ease-in-out;
 `;
 
@@ -17,7 +17,7 @@ const TypingList = styled.ul`
   li {
     font-size: 0.708rem;
     color: ${({ theme }) => theme.typingColor};
-    line-height: 0.916rem;
+    line-height: 100%;
     letter-spacing: 1px;
     width: 0;
     height: 0;

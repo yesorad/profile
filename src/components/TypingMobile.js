@@ -111,11 +111,11 @@ function TypingMobile() {
       <TitText>
         <span className="titTop">HI,</span>
         <span className="titTop">KIM EUNG GIL</span>
-        <span className="titTop">PORTFOLIO</span>
+        <span className="titTop">PROFILE</span>
       </TitText>
       <TitText>
         <span className="titBottom">I'M</span>
-        <span className="titBottom">WEB FRONTEED</span>
+        <span className="titBottom">WEB FRONTEND</span>
         <span className="titBottom">DEVELOPER</span>
       </TitText>
     </MobileMain>
