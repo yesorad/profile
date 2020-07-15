@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const MoHeader = styled.header`
   position: absolute;
-  top: 1.041rem;
+  top: 2.2rem;
   right: 1.041rem;
   z-index: 10;
   width: 3.333rem;

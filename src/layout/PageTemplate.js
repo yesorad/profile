@@ -7,6 +7,10 @@ const PageBlock = styled.section`
   margin: 0 auto;
   padding-top: 3.333rem;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 960px) {
+    padding-top: 6rem;
+  }
 `;
 
 function PageTemplate({ children }) {
