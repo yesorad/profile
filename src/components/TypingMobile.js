@@ -53,6 +53,7 @@ const MobileMain = styled.aside`
   position: absolute;
   top: 8.5rem;
   left: 7.5rem;
+  z-index: 5;
 
   @media only screen and (max-width: 640px) {
     top: 12.5rem;

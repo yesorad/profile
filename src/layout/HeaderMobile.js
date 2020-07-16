@@ -6,7 +6,7 @@ const MoHeader = styled.header`
   position: absolute;
   top: 2.2rem;
   right: 1.041rem;
-  z-index: 10;
+  z-index: 50;
   width: 3.333rem;
   border-radius: 5px;
   height: 3.333rem;
@@ -22,7 +22,6 @@ const Menu = styled.div`
   right: 0.625rem;
   transition: all 0.3s;
   border-radius: 5px;
-  z-index: 100;
   span {
     width: 2.5rem;
     height: 0.312rem;
@@ -60,7 +59,7 @@ const Navi = styled.nav`
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   transition: all 0.3s;

@@ -11,6 +11,7 @@ const TypingBlock = styled.aside`
   top: 70%;
   left: 65%;
   transition: 1s ease-in-out;
+  z-index: 10;
 `;
 
 const TypingList = styled.ul`

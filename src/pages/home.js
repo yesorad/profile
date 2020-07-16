@@ -4,10 +4,11 @@ import Media from 'react-media';
 import TypingContainer from '../containers/TypingContainer';
 import SEO from '../components/common/SEO';
 import TypingMobile from '../components/TypingMobile';
+import MainTemplate from '../layout/MainTemplate';
 
 function home() {
   return (
-    <>
+    <MainTemplate>
       <SEO
         title="Main"
         keywords="Main, Profile, yesroad, kimEungGil"
@@ -18,7 +19,7 @@ function home() {
       <Media queries={{ tablet: { maxWidth: 960 } }}>
         {(matches) => (matches.tablet ? null : <TypingContainer />)}
       </Media>
-    </>
+    </MainTemplate>
   );
 }
 

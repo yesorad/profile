@@ -14,7 +14,7 @@ const ThemeBlock = styled.aside`
   box-sizing: border-box;
   transition: all 0.3s;
   cursor: pointer;
-  z-index: 10;
+  z-index: 50;
 
   @media only screen and (max-width: 960px) {
     left: 2.566rem;
