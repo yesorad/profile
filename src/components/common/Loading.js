@@ -24,7 +24,7 @@ const LoadingBlock = styled.aside`
   svg {
     width: 2.916rem;
     height: 2.916rem;
-    color: #fff;
+    color: ${({ theme }) => theme.primaryColor};
   }
 `;
 

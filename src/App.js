@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import home from './pages/home';
 import contact from './pages/contact';
 import portfolio from './pages/portfolio';
+import notFound from './pages/notFound';
 import Layout from './layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
 import ProviderContainer from './containers/ProviderContainer';
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/" component={home} exact />
                     <Route path="/portfolio" component={portfolio} />
                     <Route path="/contact" component={contact} />
+                    <Route component={notFound} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
