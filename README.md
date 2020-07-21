@@ -5,8 +5,6 @@
 
 ## Build SetUp
 
----
-
 ```
 # install dependencies
 $ yarn install
