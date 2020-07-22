@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTemplate from '../layout/PageTemplate';
 import PageTitle from '../layout/PageTitie';
-import Portfolio from '../components/Portfolio';
 import SEO from '../components/common/SEO';
+import WorkContainer from '../containers/WorkContainer';
 
-function portfolio() {
+function work() {
   return (
     <PageTemplate>
       <SEO
@@ -13,9 +13,9 @@ function portfolio() {
         description="YesRoad Portfoile Page"
       />
       <PageTitle title="MY" colorTitle="PORTFOLIO" subTitle="WORKS" />
-      <Portfolio />
+      <WorkContainer />
     </PageTemplate>
   );
 }
 
-export default portfolio;
+export default work;

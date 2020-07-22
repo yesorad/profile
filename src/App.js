@@ -3,10 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import home from './pages/home';
 import contact from './pages/contact';
-import portfolio from './pages/portfolio';
+import work from './pages/work';
 import notFound from './pages/notFound';
 import Layout from './layout/Layout';
-import GlobalStyles from './styles/GlobalStyles';
+import GlobalStyles from './assets/styles/GlobalStyles';
 import ProviderContainer from './containers/ProviderContainer';
 import HeaderContainer from './containers/HeaderContainer';
 
@@ -31,7 +31,7 @@ function App() {
                 >
                   <Switch location={location}>
                     <Route path="/" component={home} exact />
-                    <Route path="/portfolio" component={portfolio} />
+                    <Route path="/portfolio" component={work} />
                     <Route path="/contact" component={contact} />
                     <Route component={notFound} />
                   </Switch>
