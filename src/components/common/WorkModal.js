@@ -3,20 +3,20 @@ import styled from 'styled-components';
 import { GrClose } from 'react-icons/gr';
 
 const ModalBlock = styled.article`
-  width: 100%;
-  height: 100%;
+  max-width: 33.333rem;
+  width: calc(100% - 2.083rem);
+  transform: translateX(-50%);
+  max-height: 29.166rem;
   position: fixed;
   top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 50%;
 `;
 
 const ModalInner = styled.div`
-  max-width: calc(100% - 2.083rem);
+  width: 100%;
   max-height: 29.166rem;
-  border: 1px solid #fcfcfc;
+  top: 6.25rem;
+  border: 1px solid #1c1c1c;
   border-radius: 0.208rem;
   position: relative;
   overflow-y: auto;
@@ -31,13 +31,14 @@ const ModalInner = styled.div`
 
 const Close = styled.span`
   position: absolute;
-  top: 0.416rem;
-  right: 0.416rem;
+  top: 6.85rem;
+  right: 1.25rem;
   cursor: pointer;
+  z-index: 100;
 
   svg {
-    width: 1.666rem;
-    height: 1.666rem;
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -47,10 +48,10 @@ function WorkModal({ works, item, onHide }) {
     <ModalBlock>
       <ModalInner>
         <img src={modal.modalImg} alt={modal.title} />
-        <Close onClick={onHide}>
-          <GrClose />
-        </Close>
       </ModalInner>
+      <Close onClick={onHide}>
+        <GrClose />
+      </Close>
     </ModalBlock>
   );
 }

@@ -115,7 +115,7 @@ function HeaderMobile() {
             <a href="#;">ABOUT</a>
           </li>
           <li>
-            <NavLink to="/portfolio" activeClassName="active">
+            <NavLink to="/work" activeClassName="active">
               PORTFOLIO
             </NavLink>
           </li>
@@ -125,7 +125,9 @@ function HeaderMobile() {
             </NavLink>
           </li>
           <li>
-            <a href="//github.com/yesorad">GITHUB</a>
+            <a href="//github.com/yesorad" target="blank">
+              GITHUB
+            </a>
           </li>
         </ul>
       </Navi>

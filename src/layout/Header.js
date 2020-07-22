@@ -101,7 +101,7 @@ function Header() {
           </li>
           <li>
             <span>PORTFOLIO</span>
-            <NavLink to="/portfolio" activeClassName="active">
+            <NavLink to="/work" activeClassName="active">
               <MdWork />
             </NavLink>
           </li>

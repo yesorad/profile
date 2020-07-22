@@ -31,7 +31,7 @@ function App() {
                 >
                   <Switch location={location}>
                     <Route path="/" component={home} exact />
-                    <Route path="/portfolio" component={work} />
+                    <Route path="/work" component={work} />
                     <Route path="/contact" component={contact} />
                     <Route component={notFound} />
                   </Switch>

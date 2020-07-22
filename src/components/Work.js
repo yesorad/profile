@@ -28,6 +28,7 @@ const WorkItem = styled.div`
   img {
     width: 100%;
     height: 100%;
+    display: block;
     transition: all 0.3s;
     transform: scale(1);
   }
@@ -81,7 +82,7 @@ const WorkItem = styled.div`
   }
 `;
 
-function Work({ works, item, onItem }) {
+function Work({ works, onItem }) {
   return (
     <WorkBlock>
       {works.map((work) => (
