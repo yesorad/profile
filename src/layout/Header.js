@@ -95,7 +95,10 @@ function Header() {
           </li>
           <li>
             <span>ABOUT</span>
-            <a href="#;">
+            <a
+              href="//drive.google.com/file/d/1IpGu_HEqTY-tYilR8Tw6IM8IuwwvEphi/view"
+              target="blank"
+            >
               <MdAccountCircle />
             </a>
           </li>

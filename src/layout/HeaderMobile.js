@@ -112,7 +112,12 @@ function HeaderMobile() {
             </NavLink>
           </li>
           <li>
-            <a href="#;">ABOUT</a>
+            <a
+              href="//drive.google.com/file/d/1IpGu_HEqTY-tYilR8Tw6IM8IuwwvEphi/view"
+              target="blank"
+            >
+              ABOUT
+            </a>
           </li>
           <li>
             <NavLink to="/work" activeClassName="active">
