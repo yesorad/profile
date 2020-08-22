@@ -16,10 +16,10 @@ function WorkContainer() {
   const works = [
     {
       id: 1,
-      title: 'MBC 아카데미 뷰티 학원 PC',
+      title: 'Netflix Clone Coding',
       thumb: thumb01,
       modalImg: modal01,
-      link: '//off.mbcbeauty.co.kr/m',
+      link: '//netflixyesroad.netlify.app/',
     },
     {
       id: 2,
