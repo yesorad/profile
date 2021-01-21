@@ -92,9 +92,11 @@ function Work({ works, onItem }) {
             <figure>
               <strong>{work.title}</strong>
               <FiMonitor onClick={() => onItem(work.id)} />
-              <a href={work.link} target="blank">
-                <BsLink45Deg />
-              </a>
+              {work.link && (
+                <a href={work.link} target="blank">
+                  <BsLink45Deg />
+                </a>
+              )}
             </figure>
           </aside>
         </WorkItem>

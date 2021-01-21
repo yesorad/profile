@@ -26,7 +26,7 @@ function WorkContainer() {
       title: 'MBC 아카데미 뷰티 학원 M',
       thumb: thumb02,
       modalImg: modal02,
-      link: '//off.mbcbeauty.co.kr',
+      link: '//off.mbcbeauty.co.kr/m',
     },
     {
       id: 3,
@@ -40,14 +40,12 @@ function WorkContainer() {
       title: '커넥츠 프로젝트 PC',
       thumb: thumb04,
       modalImg: modal04,
-      link: '//project.conects.com/',
     },
     {
       id: 5,
       title: '프로젝트 클래스 후기 PC',
       thumb: thumb05,
       modalImg: modal05,
-      link: '//project.conects.com/landing/neovalue/intro',
     },
   ];
 
